@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Scheduler</title>
+	<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</head>
+<body>
+<div class="container">
+          <div class="row">
+
+              <div class="panel panel-default titlePanel" style="max-width:800px;margin-left:auto; margin-right:auto;">
+                <!-- Default panel contents -->
+                <div class="panel-heading">Train Schedules</div>
+                <div class="panel-body">
+                  <p></p>
+                </div>
+
+                <!-- Table -->
+                <table class="table trainTable">
+                  <thead>
+                    <tr>
+                     <th id="name">Train Name</th>
+                     <th id="destination">Destination</th>
+                     <th id="frequency">Frequency</th>
+                     <th id="next-arrival">Next Arrival</th>
+                     <th id="minutes-away">Minutes Away</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+
+                 </tbody>
+               <div class="newInfo">
+               </div>
+
+                </table>
+              </div>
+
+              <div class="panel panel-default inputPanel" style="max-width:800px;margin-left:auto; margin-right:auto;">
+                <!-- Default panel contents -->
+                <div class="panel-heading">Add A Train, Train Lovers!</div>
+                <div class="panel-body">
+                  <p></p>
+                  <form>
+                <div class="form-group">
+                  <label for="text">Train Name</label>
+                  <input type="text" class="form-control" id="name-input" placeholder="ex: Super Train">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Destination</label>
+                  <input type="text" class="form-control" id="destination-input" placeholder="Super Town">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">First Train Time</label>
+                  <input type="time" class="form-control" id="first-input" placeholder="ex: 3:46">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Frequency (in minutes)</label>
+                  <input type="number" class="form-control" id="frequency-input" placeholder="ex: 25">
+                </div>
+
+
+                <button type="submit" class="btn btn-default" id="add-train">Submit</button>
+              </form>
+                </div>
+
+                <!-- Table -->
+
+
+            </div>
+
+
+
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
